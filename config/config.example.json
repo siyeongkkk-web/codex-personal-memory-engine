@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "workspace_scope": "/absolute/path/to/one/workspace",
+  "capture_enabled": true,
+  "max_content_chars": 100000
+}

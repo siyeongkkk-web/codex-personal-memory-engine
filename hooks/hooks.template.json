@@ -1,0 +1,27 @@
+{
+  "description": "Local, reviewable capture for Codex Personal Memory Engine.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 \"__HOOK_SCRIPT__\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 \"__HOOK_SCRIPT__\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}

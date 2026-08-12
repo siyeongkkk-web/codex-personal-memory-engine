@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Personal Memory Evidence Event",
+  "type": "object",
+  "required": ["schema_version", "evidence_id", "observed_at", "source_event_ids", "evidence_type", "subject", "observation", "scope", "strength"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "evidence_id": {"type": "string", "minLength": 1},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "source_event_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "evidence_type": {"enum": ["explicit_preference", "explicit_correction", "self_explanation", "concept_distinction", "product_judgment", "project_artifact", "repeated_behavior", "counterevidence"]},
+    "subject": {"type": "string", "minLength": 1},
+    "minimal_quote": {"type": ["string", "null"]},
+    "observation": {"type": "string", "minLength": 1},
+    "scope": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "strength": {"enum": ["weak", "medium", "strong"]}
+  },
+  "additionalProperties": true
+}

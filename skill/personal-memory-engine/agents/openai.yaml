@@ -1,0 +1,4 @@
+interface:
+  display_name: Personal Memory Engine
+  short_description: 从自然使用证据中归纳、校验并审查可复核的个人协作画像候选
+  default_prompt: 处理个人记忆 inbox，更新证据和候选画像，并生成影子模式审查报告。

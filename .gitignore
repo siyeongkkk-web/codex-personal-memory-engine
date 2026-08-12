@@ -1,0 +1,12 @@
+# Runtime data: never publish a user's conversations or inferred profile.
+.runtime/
+private-inbox/
+evidence/events.jsonl
+reviews/*.md
+runtime/active-profile.md
+
+# Local and generated files
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
